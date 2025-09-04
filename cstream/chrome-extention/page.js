@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('data-content');
     const statusElement = document.getElementById('status');
 
-    const apiUrl = 'https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/data/json/repository.json'; // Example JSON API
+    const timestamp = Date.now();
+    const apiUrl = 'https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/data/json/repository.json?timestamp=' + timestamp;
 
     fetch(apiUrl)
         .then(response => {
