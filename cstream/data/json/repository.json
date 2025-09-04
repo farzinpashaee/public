@@ -1,5 +1,16 @@
 {
-	"name": "Farzin",
-	"role": "Software Engineer",
-	"skills": ["Java", "Spring Boot", "Kafka"]
+	"name": "CStream",
+	"version" : "1",
+	"Sources" : [{
+		"id": "YouTube",
+		"link": "https://www.youtube.com/",
+		"image" : ""
+	}]
+	"channels": [{
+		"name": "Bloomberg Business News Live",
+		"status": "ACTIVE",
+		"source": "youtube",
+		"link": "https://www.youtube.com/watch?v=iEpJwprxDdk",
+		"image": ""
+	}]		
 }

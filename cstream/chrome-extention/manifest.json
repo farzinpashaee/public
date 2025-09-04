@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CStream",
+  "version": "1.0",
+  "description": "Opens a new tab to display data fetched from a JSON API.",
+  "action": {
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://raw.githubusercontent.com/farzinpashaee/public/*"
+  ]
+}
