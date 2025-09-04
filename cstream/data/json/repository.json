@@ -1,16 +1,54 @@
 {
 	"name": "CStream",
 	"version" : "1",
-	"Sources" : [{
-		"id": "YouTube",
+	"sources" : [{
+		"id": 1,
+		"name": "Youtube",
 		"link": "https://www.youtube.com/",
+		"image" : ""
+	},{
+		"id": 2,
+		"name": "TVgarden",
+		"link": "https://tv.garden/",
+		"image" : ""
+	}],
+	"catgories" : [{
+		"id": 1,
+		"name": "News",
+		"image" : ""
+	},{
+		"id": 2,
+		"name": "Sports",
 		"image" : ""
 	}],
 	"channels": [{
 		"name": "Bloomberg Business News Live",
 		"status": "ACTIVE",
-		"source": "youtube",
+		"category": 1,
+		"source": 1,
 		"link": "https://www.youtube.com/watch?v=iEpJwprxDdk",
-		"image": ""
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bloomberg.jpg"
+	},{
+		"name": "NBC News NOW",
+		"status": "ACTIVE",
+		"category": 1,
+		"source": 1,
+		"link": "https://www.youtube.com/watch?v=fVI-klwDbbU",
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/nbc-now.jpg"
+	},{
+		"name": "CBC News",
+		"status": "ACTIVE",
+		"category": 1,
+		"source": 1,
+		"link": "https://www.youtube.com/watch?v=IK2eNWz4gQA",
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/cbc-news.jpg"
+	},{
+		"name": "TSN5",
+		"status": "ACTIVE",
+		"category": 2,
+		"source": 2,
+		"link": "https://tv.garden/ca/WWeaDyjDDgcRDS",
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/tsn5.jpg"
 	}]		
 }
+
