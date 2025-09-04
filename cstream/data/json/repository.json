@@ -49,6 +49,13 @@
 		"source": 2,
 		"link": "https://tv.garden/ca/WWeaDyjDDgcRDS",
 		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/tsn5.jpg"
+	},{
+		"name": "BBC News",
+		"status": "ACTIVE",
+		"category": 1,
+		"source": 2,
+		"link": "https://tv.garden/uk/g1kSsRGdu6pjqO",
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bbc-news.jpg"
 	}]		
 }
 

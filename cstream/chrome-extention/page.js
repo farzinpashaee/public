@@ -13,16 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            statusElement.textContent = 'Data loaded successfully!';
-            statusElement.classList.add('text-green-600');
             
-            // Display the fetched data
-            
+            let news = `<div class="row flex-nowrap overflow-auto py-2">`;
+            data.channels.forEach(channel => {
+                news += `<div class="col-2">
+                        <a target="_blank" href="${channel.link}"><img src="${channel.image}" class="channel-image img-fluid" alt="${channel.name}"></a>
+                        <div class="card-body text-center p-2">
+                            <h5 class="card-title text-sm mb-0">${channel.name}</h5>
+                        </div>
+                    </div>`;
+            });
+            news += `</div>`;
+
 
             container.innerHTML = `
-                <div class="container-fluid py-4">
-                    <div class="movie-row">
-                        <h2>${data.name}</h2>
+                <div class="container-fluid">
+                    <div class="channels-row">
+                        ${news}
                     </div>
                 </div>
             `;           
