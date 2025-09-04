@@ -27,35 +27,40 @@
 		"category": 1,
 		"source": 1,
 		"link": "https://www.youtube.com/watch?v=iEpJwprxDdk",
-		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bloomberg.jpg"
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bloomberg.jpg",
+		"order": 1
 	},{
 		"name": "NBC News NOW",
 		"status": "ACTIVE",
 		"category": 1,
 		"source": 1,
 		"link": "https://www.youtube.com/watch?v=fVI-klwDbbU",
-		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/nbc-now.jpg"
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/nbc-now.jpg",
+		"order": 4
 	},{
 		"name": "CBC News",
 		"status": "ACTIVE",
 		"category": 1,
 		"source": 1,
 		"link": "https://www.youtube.com/watch?v=IK2eNWz4gQA",
-		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/cbc-news.jpg"
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/cbc-news.jpg",
+		"order": 3
 	},{
 		"name": "TSN5",
 		"status": "ACTIVE",
 		"category": 2,
 		"source": 2,
 		"link": "https://tv.garden/ca/WWeaDyjDDgcRDS",
-		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/tsn5.jpg"
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/tsn5.jpg",
+		"order": 1
 	},{
 		"name": "BBC News",
 		"status": "ACTIVE",
 		"category": 1,
 		"source": 2,
 		"link": "https://tv.garden/uk/g1kSsRGdu6pjqO",
-		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bbc-news.jpg"
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bbc-news.jpg",
+		"order": 2
 	}]		
 }
 
