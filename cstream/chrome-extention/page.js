@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             data.channels.forEach(channel => {
 
                 news += `<div class="col-2">
-                        <a target="_blank" href="${channel.source[0].link}"><img src="${channel.image}" class="channel-image img-fluid" alt="${channel.name}"></a>
+                        <a target="_blank" href="${channel.sources[0].link}"><img src="${channel.image}" class="channel-image img-fluid" alt="${channel.name}"></a>
                         <div class="card-body text-center p-2">
                             <h5 class="card-title text-sm mb-0">${channel.name}</h5>
                         </div>
@@ -29,11 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             container.innerHTML = `
                 <div class="container-fluid">
-                    <div class="channels-row">
+                    <div id="channels-container" class="channels-row">
                         ${news}
                     </div>
                 </div>
-            `;           
+            `;    
+
         })
         .catch(error => {
             console.error('Fetch error:', error);
