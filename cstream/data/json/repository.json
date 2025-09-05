@@ -1,7 +1,7 @@
 {
 	"name": "CStream",
 	"version" : "1",
-	"sources" : [{
+	"providers" : [{
 		"id": 1,
 		"name": "Youtube",
 		"link": "https://www.youtube.com/",
@@ -20,21 +20,37 @@
 		"id": 2,
 		"name": "Sports",
 		"image" : ""
+	},{
+		"id": 3,
+		"name": "Movies",
+		"image" : ""
+	},{
+		"id": 4,
+		"name": "Documentary",
+		"image" : ""
 	}],
 	"channels": [{
 		"name": "Bloomberg Business News Live",
 		"status": "ACTIVE",
 		"category": 1,
-		"source": 1,
-		"link": "https://www.youtube.com/watch?v=iEpJwprxDdk",
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 1,
+				"link" : "https://www.youtube.com/watch?v=iEpJwprxDdk"
+			}],
 		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bloomberg.jpg",
 		"order": 1
 	},{
 		"name": "NBC News NOW",
 		"status": "ACTIVE",
 		"category": 1,
-		"source": 1,
-		"link": "https://www.youtube.com/watch?v=fVI-klwDbbU",
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 1,
+				"link" : "https://www.youtube.com/watch?v=fVI-klwDbbU"
+			}],
 		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/nbc-now.jpg",
 		"order": 4
 	},{
@@ -42,25 +58,170 @@
 		"status": "ACTIVE",
 		"category": 1,
 		"source": 1,
-		"link": "https://www.youtube.com/watch?v=IK2eNWz4gQA",
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 1,
+				"link": "https://www.youtube.com/watch?v=IK2eNWz4gQA"
+			}],
 		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/cbc-news.jpg",
 		"order": 3
 	},{
 		"name": "TSN5",
 		"status": "ACTIVE",
 		"category": 2,
-		"source": 2,
-		"link": "https://tv.garden/ca/WWeaDyjDDgcRDS",
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/ca/WWeaDyjDDgcRDS"
+			}],
 		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/tsn5.jpg",
 		"order": 1
 	},{
 		"name": "BBC News",
 		"status": "ACTIVE",
 		"category": 1,
-		"source": 2,
-		"link": "https://tv.garden/uk/g1kSsRGdu6pjqO",
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/uk/g1kSsRGdu6pjqO"
+			}],
 		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bbc-news.jpg",
 		"order": 2
+	},{
+		"name": "ABC News",
+		"status": "ACTIVE",
+		"category": 1,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/P8q5mRZ0E6h0hF"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/abc-news.jpg",
+		"order": 5
+	},{
+		"name": "Bein Sports USA",
+		"status": "ACTIVE",
+		"category": 2,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/JCFfgMFrIB6tNm"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/bein-sports-us.jpg",
+		"order": 6
+	},{
+		"name": "Fox News",
+		"status": "ACTIVE",
+		"category": 1,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/D3ewYOL47RSJW0"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/fox-news.jpg",
+		"order": 7
+	},{
+		"name": "Fox Business",
+		"status": "ACTIVE",
+		"category": 1,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/hO3HYR4TgtSkMv"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/fox-business.jpg",
+		"order": 8
+	},{
+		"name": "Fox Sports 1",
+		"status": "ACTIVE",
+		"category": 2,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/qSYVLUFyuOd7nb"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/fox-sports-1.jpg",
+		"order": 9
+	},{
+		"name": "FX East",
+		"status": "ACTIVE",
+		"category": 3,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/XSp3iDrpFtvKLO"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/fx-east.jpg",
+		"order": 10
+	},{
+		"name": "HGTV",
+		"status": "ACTIVE",
+		"category": 4,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/At37Dsvj2y6fRV"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/hgtv.jpg",
+		"order": 11
+	},{
+		"name": "History",
+		"status": "ACTIVE",
+		"category": 4,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/6kAK1tanwdENZz"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/history.jpg",
+		"order": 12
+	},{
+		"name": "MGM+ East",
+		"status": "ACTIVE",
+		"category": 3,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/xyJ9igZWpc1jon"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/mgm-plus-east.jpg",
+		"order": 13
+	},{
+		"name": "National Geographic",
+		"status": "ACTIVE",
+		"category": 4,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 2,
+				"link": "https://tv.garden/us/OTt34K7T0tKEK5"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/ng.jpg",
+		"order": 14
+	},{
+		"name": "Yahoo Finance",
+		"status": "ACTIVE",
+		"category": 1,
+		"sources": [{
+				"primary": true,
+				"status": "ACTIVE",
+				"provider": 1,
+				"link": "https://www.youtube.com/watch?v=KQp-e_XQnDE"
+			}],
+		"image": "https://raw.githubusercontent.com/farzinpashaee/public/refs/heads/main/cstream/assets/images/channel/yahoo-finance.jpg",
+		"order": 15
 	}]		
 }
 

@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             let news = `<div class="row flex-nowrap overflow-auto py-2">`;
             data.channels.forEach(channel => {
+
                 news += `<div class="col-2">
-                        <a target="_blank" href="${channel.link}"><img src="${channel.image}" class="channel-image img-fluid" alt="${channel.name}"></a>
+                        <a target="_blank" href="${channel.source[0].link}"><img src="${channel.image}" class="channel-image img-fluid" alt="${channel.name}"></a>
                         <div class="card-body text-center p-2">
                             <h5 class="card-title text-sm mb-0">${channel.name}</h5>
                         </div>
